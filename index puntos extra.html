@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AUTOVIP</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style puntos extra.css" />
+    <link rel="stylesheet" href="img/audi_1.jpg" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          >AUTO<span class="fw-bold">VIP</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          aria-label="Alternar navegación"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="barraNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Venta 0km</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Venta Usados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#formularioContacto"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="overlay text-center">
+        <h1 class="text-white">¡Hola! Bienvenido a AutoVIP</h1>
+        <p class="text-white">
+          Hacé clic en "Contacto" para enviarnos tu mensaje.
+        </p>
+      </div>
+    </section>
+
+    <div
+      class="modal fade"
+      id="formularioContacto"
+      tabindex="-1"
+      aria-labelledby="formularioContactoLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="formularioContactoLabel">
+              Formulario de Contacto
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
+          </div>
+          <form>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="nombreUsuario" class="form-label">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombreUsuario"
+                  placeholder="Escribí tu nombre completo"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="emailUsuario" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailUsuario"
+                  placeholder="Escribí tu correo electrónico"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="mensajeUsuario" class="form-label">Mensaje</label>
+                <textarea
+                  class="form-control"
+                  id="mensajeUsuario"
+                  rows="5"
+                  placeholder="Escribí tu mensaje aquí..."
+                ></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+              <button type="submit" class="btn btn-success">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

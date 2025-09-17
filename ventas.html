@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AUTOVIP - Ventas</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          >AUTO<span class="fw-bold">VIP</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#barraNav"
+          aria-controls="barraNav"
+          aria-expanded="false"
+          aria-label="Alternar navegación"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="barraNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Ventas</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Usados</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="top-accent"></div>
+
+    <main class="container my-4">
+      <div class="row">
+        <aside class="col-md-3 mb-4">
+          <div class="filter-box p-3">
+            <h5 class="mb-3">Filtro</h5>
+            <form action="#" method="get">
+              <div class="mb-3">
+                <label for="filtroAnio" class="form-label small">Año</label>
+                <select id="filtroAnio" class="form-select">
+                  <option value="">Todos</option>
+                  <option>2023</option>
+                  <option>2021</option>
+                  <option>2018</option>
+                  <option>2017</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="filtroMarca" class="form-label small">Marca</label>
+                <select id="filtroMarca" class="form-select">
+                  <option value="">Todas</option>
+                  <option>Audi</option>
+                  <option>BMW</option>
+                  <option>Toyota</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="filtroModelo" class="form-label small"
+                  >Modelo</label
+                >
+                <select id="filtroModelo" class="form-select">
+                  <option value="">Todos</option>
+                  <option>Q5</option>
+                  <option>Q7</option>
+                  <option>A6</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="filtroEstado" class="form-label small"
+                  >Estado</label
+                >
+                <select id="filtroEstado" class="form-select">
+                  <option value="">Cualquiera</option>
+                  <option>Nuevo</option>
+                  <option>Usado</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-warning w-100">
+                Filtrar
+              </button>
+            </form>
+            <button class="btn btn-link mt-2 p-0">Limpiar filtros</button>
+          </div>
+        </aside>
+        <section class="col-md-9">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="mb-0">Ventas</h2>
+            <small class="text-muted">Mostrando 3 resultados</small>
+          </div>
+          <article class="card mb-3 tarjeta-vehiculo">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="img/audi-q5.jpg"
+                  class="img-fluid rounded-start"
+                  alt="Audi Q5"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <h5 class="card-title mb-1">
+                      Audi Q5 <small class="text-muted">2017</small>
+                    </h5>
+                    <p class="price mb-0">USD 29.900</p>
+                  </div>
+                  <p class="card-text small text-muted">
+                    Motor 2.0, transmisión automática, 75.000 km.
+                  </p>
+                  <p class="card-text small">
+                    <span class="stars">★★★★★</span>
+                    <span class="text-muted">123 reseñas</span>
+                  </p>
+                  <div class="mt-2">
+                    <a href="#" class="btn btn-success btn-sm me-2">Comprar</a>
+                    <a href="#" class="btn btn-outline-secondary btn-sm"
+                      >Más información</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="card mb-3 tarjeta-vehiculo">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="img/audi-q7.jpg"
+                  class="img-fluid rounded-start"
+                  alt="Audi Q7"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <h5 class="card-title mb-1">
+                      Audi Q7 <small class="text-muted">2019</small>
+                    </h5>
+                    <p class="price mb-0">USD 35.500</p>
+                  </div>
+                  <p class="card-text small text-muted">
+                    Vehículo familiar, 6 asientos, 50.000 km.
+                  </p>
+                  <p class="card-text small">
+                    <span class="stars">★★★★☆</span>
+                    <span class="text-muted">98 reseñas</span>
+                  </p>
+                  <div class="mt-2">
+                    <a href="#" class="btn btn-success btn-sm me-2">Comprar</a>
+                    <a href="#" class="btn btn-outline-secondary btn-sm"
+                      >Más información</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="card mb-3 tarjeta-vehiculo">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="img/audi-a6.jpg"
+                  class="img-fluid rounded-start"
+                  alt="Audi A6"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <h5 class="card-title mb-1">
+                      Audi A6 <small class="text-muted">2016</small>
+                    </h5>
+                    <p class="price mb-0">USD 18.800</p>
+                  </div>
+                  <p class="card-text small text-muted">
+                    Compacto, consumo eficiente, ideal ciudad, 85.000 km.
+                  </p>
+                  <p class="card-text small">
+                    <span class="stars">★★★★☆</span>
+                    <span class="text-muted">64 reseñas</span>
+                  </p>
+                  <div class="mt-2">
+                    <a href="#" class="btn btn-success btn-sm me-2">Comprar</a>
+                    <a href="#" class="btn btn-outline-secondary btn-sm"
+                      >Más información</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

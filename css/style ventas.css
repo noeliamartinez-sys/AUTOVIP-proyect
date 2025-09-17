@@ -1,0 +1,38 @@
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial;
+  background: #ffffff;
+  color: #222;
+}
+.top-accent {
+  height: 6px;
+  background: #ff8a00;
+}
+.filter-box {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+}
+.tarjeta-vehiculo img {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.tarjeta-vehiculo .card-body {
+  position: relative;
+}
+
+.price {
+  color: #d9534f;
+  font-weight: 700;
+}
+.stars {
+  color: #f0ad4e;
+  letter-spacing: 1px;
+}
+@media (max-width: 576px) {
+  .tarjeta-vehiculo img {
+    height: 140px;
+  }
+}

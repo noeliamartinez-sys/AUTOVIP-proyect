@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.navbar {
+  border-bottom: 4px solid #ffd700;
+}
+.hero {
+  background-image: url("../img/audi_1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.hero .overlay {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 30px 40px;
+  border-radius: 8px;
+  text-align: center;
+}
+.modal-content {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.35);
+}
+
+.form-control::placeholder {
+  color: #999;
+}
