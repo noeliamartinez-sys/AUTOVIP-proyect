@@ -1,30 +1,188 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <title>Pie de página</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>AUTOVIP - Ventas</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <footer>
-      <div class="footer-container">
-        <div class="footer-left">
-          <h2>AUTO<span>VIP</span></h2>
-        </div>
-        <div class="footer-center">
-          <div class="footer-column">
-            <p>Venta 0km</p>
-            <p>Venta Usados</p>
-          </div>
-          <div class="footer-column">
-            <p>Sobre Nosotros</p>
-            <p>Contacto</p>
-          </div>
-        </div>
-        <div class="footer-right">
-          <p>Copyright © AutoVIP 2023</p>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          >AUTO<span class="fw-bold">VIP</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Alternar navegación"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Venta 0km</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Venta Usados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+          </ul>
         </div>
       </div>
+    </nav>
+    <div class="top-accent"></div>
+    <div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselMain"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselMain"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselMain"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="img/audi_r8.jpg"
+            class="d-block w-100 carousel-img"
+            alt="Auto 1"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Audi</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/bmw_m8.jpg"
+            class="d-block w-100 carousel-img"
+            alt="Auto 2"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Modelos destacados</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/volvo_xc90.jpg"
+            class="d-block w-100 carousel-img"
+            alt="Auto 3"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Confort y diseño</h5>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselMain"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselMain"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+    <main class="container my-4">
+      <div class="welcome-box p-4 mb-4">
+        <h2 class="fw-bold">Bienvenido a <span class="brand">AUTOVIP</span></h2>
+        <p class="text-muted">
+          Encontrá los mejores modelos y opciones. Elegí con confianza.
+        </p>
+
+        <div class="row mt-3">
+          <div class="col-md-4 mb-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">🚘 Venta de 0km</h5>
+                <p class="small card-text text-muted">
+                  Autos cero kilómetro con financiación y garantía oficial. Las
+                  mejores marcas de lujo. Experimenta la libertad en cada curva
+                </p>
+                <a href="#" class="btn btn-outline-primary btn-sm">Ver autos</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h6 class="card-title">🚙Venta de Usados</h6>
+                <p class="small card-text text-muted">
+                  Revisados, con historial y condiciones claras. Encontrá el
+                  equilibrio perfecto entre potencia, diseño y seguridad.
+                  Descubrí la experiencia de manejar un auto que se adapta a tu
+                  estilo de vida
+                </p>
+                <a href="#" class="btn btn-outline-primary btn-sm"
+                  >Ver usados</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <h6 class="card-title">📝Trámites</h6>
+                <p class="small card-text text-muted">
+                  Te ayudamos con transferencia, seguro y documentación.
+                  Olvidate del papeleo interminable. Con nosotros, comprar tu
+                  auto es un proceso rápido, transparente y seguro. En pocos
+                  pasos, tu vehículo está listo para salir a la calle
+                </p>
+                <a href="#" class="btn btn-outline-primary btn-sm"
+                  >Ver trámites</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-accent"></div>
+      <div class="container text-center py-3">
+        <p class="mb-1">&copy; 2025 AUTOVIP</p>
+        <small class="text-muted">Dirección · Teléfono · Email</small>
+      </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
